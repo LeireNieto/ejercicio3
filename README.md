@@ -30,6 +30,9 @@ ENTREGABLE
 
 Ficheros ***index.html*** y ***style.css*** modificados para que la página se parezca lo más posible al modelo.
 
+![Modelo Lananding PAge](ModeloLanding.png)
+
+
 REQUISITOS PREVIOS
 =====================
 
