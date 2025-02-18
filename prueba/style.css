@@ -27,7 +27,6 @@ li {
 a {
   color: #000;
   text-decoration: none;
-  padding: 20px; /* Agrega espacio alrededor del texto dentro del recuadro */
 }
 
 /** global classes styling **/
@@ -36,15 +35,13 @@ a {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .btn {
-  padding: 0 px;
+  padding: 0 20px;
   height: 40px;
   font-size: 1em;
   font-weight: 900;
-  
   /*
   ...cambia aquí...
   */
@@ -53,7 +50,6 @@ a {
 
 .grid {
   display: flex;
-  
 }
 
 header {
@@ -65,7 +61,6 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #eee;
-  
 }
 
 
@@ -86,7 +81,6 @@ header {
 
 
 nav {
-  
   /*
   ...cambia aquí...
   */
@@ -97,17 +91,15 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
 }
 
 #hero {
   display: flex;
   flex-direction: column;
-    padding: 30px; /* Agrega espacio alrededor del texto dentro del recuadro */
-    margin: 40px; /* Espacio fuera del recuadro */
+    padding: 10px; /* Agrega espacio alrededor del texto dentro del recuadro */
+    margin: 60px; /* Espacio fuera del recuadro */
     font-size: 16px; /* Tamaño de la fuente (opcional) */
     text-align: center;
-
     
   }
  
@@ -134,14 +126,13 @@ nav > ul {
   max-width: 275px;
   width: 100%;
   padding: 5px;
-  margin: 10px; /* Espacio fuera del recuadro */s
 }
 
 #hero input[type='submit'] {
   max-width: 150px;
   width: 100%;
   height: 30px;
-  margin: 10px 0;
+  margin: 15px 0;
   border: 0;
   background-color: #f1c40f;
 }
@@ -158,8 +149,6 @@ form{
 }
 
 #features {
-
-  
   /*
   ...cambia aquí...
   */
@@ -167,16 +156,10 @@ form{
 
 #features .icon {
   display: flex;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  flex-direction:row;
-  align-items: center;
-  margin: 40px; /* Espacio fuera del recuadro */
   /*
   ...cambia aquí...
   */
-  width: 3vw;
+  width: 20vw;
   color: darkorange;
 }
 
@@ -185,9 +168,6 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px; /* Agrega espacio alrededor del texto dentro del recuadro */
-  text-align: justify;
-  
   /*
   ...cambia aquí...
   */
@@ -216,11 +196,7 @@ form{
   display: flex;
   flex-direction: column;
   width: calc(100% / 3);
-  border: #444 1px solid;
-  text-align: center;
-  margin: 10px;
-  align-items: center;
-
+    
 }
   
   /*
@@ -228,40 +204,31 @@ form{
   */
  
   
+}
 
-
-.product > .level{
-  background-color: #ccc8c1;
-  color: rgb(25, 25, 29);
+.product-box {
+  background-color: #e61515;
+  color: rgb(208, 219, 55);
   padding: 15px 0;
-  width: 100%; 
-  text-align: center; 
+  width: 300px;
+ 
+      
   /*
   ...cambia aquí...
   */
   font-weight: 700;
-  
 }
 
 .product > h2 {
   margin-top: 15px;
-  text-align: center;
-
-  
-  
 }
 
 .product > ol {
   margin: 15px 0;
-  text-align: center;
-  list-style: none;
-  
 }
 
 .product > ol > li {
   padding: 5px 0;
-  
-  
 }
 
 .product > button {
@@ -269,37 +236,32 @@ form{
   margin: 15px 0;
   background-color: #f1c40f;
   font-weight: 400;
-  width: 60px;
 }
 
 .product > button:hover {
-  background-color: rgb(247, 168, 65);
+  background-color: orange;
   transition: background-color 1s;
 }
 
 footer {
   margin-top: 30px;
-  background-color: #dddddd;
+  background-color: #ddd;
   padding: 20px;
-  
 }
 
 footer > ul {
   display: flex;
-  justify-content: right;
-
+  justify-content: flex-start;
 }
 
 footer > ul > li {
   padding: 0 10px;
-  
-  
 }
 
 footer > span {
   margin-top: 5px;
   display: flex;
-  justify-content:right;
+  justify-content: flex-start;
   font-size: 0.9em;
   color: #444;
  
