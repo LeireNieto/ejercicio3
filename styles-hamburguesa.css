@@ -1,0 +1,120 @@
+/* Menú de escritorio */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 10px 0px 10px 10px;
+    margin-left: 11px;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    /* Impide que los elementos se repartan en varias líneas */
+}
+
+
+.menu li a {
+    text-decoration: none;
+    color: #080808;
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+}
+
+/* Ocultar el checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Icono de menú hamburguesa */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-background {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    /* Invisible */
+    background-color: rgba(0, 0, 255, 0.13);
+    z-index: 1;
+    /* Debajo del menú */
+}
+
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+
+    /* Esconder el menú por defecto */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #eaebe9;
+        width: 150px;
+        box-shadow: 0 0 5px rgba(10, 9, 9, 0.3);
+        z-index: 2;
+
+    }
+
+
+    #menu-toggle:checked ~ label .menu-background {
+        display: block;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+
+        & .menu{
+            display: flex;
+        }
+    }
+
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 3px;
+    }
+
+    nav:focus-within .menu {
+        display: flex;
+    }
+
+    /* Mostrar el icono de hamburguesa */
+    .hamburger {
+        display: block;
+        position: absolute;
+        /* Lo posicionamos de forma absoluta */
+        right: 10px;
+        /* 🔥 Cambiamos 'left' por 'right' para que aparezca a la derecha */
+        border: 1px solid #0a0a0a;
+        padding: 2px 3px 2px 3px;
+        border-radius: 5px;
+
+    }
+
+    /* Cuando el checkbox está marcado, mostrar el menú */
+    #menu-toggle:checked+.hamburger+nav .menu {
+        display: flex;
+    }
+
+    #pricing {
+        flex-direction: column;
+        /* Hace que los productos se apilen en pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos */
+    }
+
+    .product {
+        width: 90%;
+        /* Ajusta el ancho para que no sea demasiado grande */
+    }
+
+}

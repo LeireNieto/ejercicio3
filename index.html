@@ -4,9 +4,11 @@
 <head>
     <title>Product Landing Page</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="title" content="Product Landing Page">
     <meta name="description" content="Product Landing Page">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles-hamburguesa.css">
 </head>
 
 <body>
@@ -15,9 +17,14 @@
             <div class="logo">
                 <img id="header-img" src="./images/product-landing-page-logo.png" alt="original trombones logo" />
             </div>
-
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle">
+                <div class="hamburger">&#8801;</div>
+                <div class="menu-background"></div>
+            </label>
+            
             <nav id="nav-bar">
-                <ul>
+                <ul class="menu">
                     <li><a class="nav-link" href="#features">Features</a></li>
                     <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
                     <li><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -41,7 +48,8 @@
                 <div class="desc">
                     <h2>Premium Materials</h2>
                     <p>
-                        Our trombones use the shiniest brass which sourced locally. This will increase the longevity of your purchase. 
+                        Our trombones use the shiniest brass which sourced locally. This will increase the longevity of
+                        your purchase.
                     </p>
                 </div>
             </div>
@@ -50,7 +58,8 @@
                 <div class="desc">
                     <h2>Fast Shipping</h2>
                     <p>
-                        We make your recieve your trombone as soon as we have finished making it. We also provide free returns if you are not sastified.
+                        We make your recieve your trombone as soon as we have finished making it. We also provide free
+                        returns if you are not sastified.
                     </p>
                 </div>
             </div>
@@ -59,7 +68,8 @@
                 <div class="desc">
                     <h2>Quality Assurance</h2>
                     <p>
-                        For every purchase you make, we will ensure there are no damages our taults and we will check and test the pitch of your instrument.
+                        For every purchase you make, we will ensure there are no damages our taults and we will check
+                        and test the pitch of your instrument.
                     </p>
                 </div>
             </div>
@@ -71,19 +81,19 @@
         </section>
         <section id="pricing">
             <div class="product" id="tenor">
-               <div class="level">TENOR TROMBONE</div>
+                <div class="level">TENOR TROMBONE</div>
                 <h2>$600</h2>
                 <ol>
-                    
+
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum.</li>
                     <li>Lorem ipsum dolor.</li>
                     <li>Lorem ipsum.</li>
                 </ol>
                 <button class="btn">SELECT</button>
-            </div> 
+            </div>
             <div class="product" id="bass">
-                                    
+
                 <div class="level">BASS TROMBONE</div>
                 <h2>$900</h2>
                 <ol>
@@ -95,7 +105,7 @@
                 <button class="btn">SELECT</button>
             </div>
             <div class="product" id="valve">
-                  
+
                 <div class="level">VALVE TROMBONE</div>
                 <h2>$1200</h2>
                 <ol>
@@ -108,7 +118,7 @@
             </div>
         </section>
         <footer>
-            
+
             <ul>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Terms</a></li>
