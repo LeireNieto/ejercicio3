@@ -117,4 +117,9 @@
         /* Ajusta el ancho para que no sea demasiado grande */
     }
 
+    #anclaPricing:focus ~  .menu{
+        display: none;
+        background-color: aqua;
+    }
+
 }
